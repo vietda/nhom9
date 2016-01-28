@@ -1,0 +1,187 @@
+body {
+
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	height:100%;
+	
+}
+
+.ui-layout-pane {
+    background: #f5f5f5 !important;
+	background-repeat: repeat;
+}
+
+#leftMenu{
+	float:left;	
+	height:100%;
+	width:25%;
+	margin:auto 5px;
+	text-align:center;
+}
+
+#rightContent{
+	float:left;
+	height:100%;
+	width:70%;
+	margin:auto 1%;
+}
+
+#login_form {
+	width: 300px;
+	background: #821C1C;
+	border: 1px solid white;
+	margin: 50px auto 0;
+	padding: 1em;
+	-moz-border-radius: 3px;
+}
+h1,h2,h3,h4,h5 {
+	margin-top: 0;
+	font-family: arial;
+	text-align: center;
+	color: white;
+}
+
+
+#login_form  input[type=text], #login_form  input[type=password] {
+	display: block;
+	margin: 0 0 1em 0;
+	width: 280px;
+	border: 2px solid #821C1C;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	padding: 1em;
+}
+
+input[type=submit], form a, button {
+	font-size:12px;
+	line-height:1.4em;
+}
+
+/*
+input[type=submit]:hover, form a:hover {
+	background: #807E36;
+	cursor: pointer;
+} */
+
+#login_form  a , #login_form  a:visited, #login_form  a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+
+/* Validation error messages */
+
+.error {
+	color: #393939;
+	font-size: 15px;
+}
+
+#login_form  fieldset {
+	width: 300px;
+	margin: auto;
+	margin-bottom: 1em;
+	display: block;
+	
+}
+
+div.clear{
+	clear:both;
+	height:1em;
+}
+
+hr{
+	width:50%;
+	align:center;
+}
+
+ fieldset {
+  margin-bottom: 10px;
+  background: #821C1C; 
+  padding-top:10px;
+	border:0px;  
+}
+
+legend {
+  display:none;
+}
+
+
+._25 {
+    width: 21%;
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+._50 {
+    width: 46%;
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+._75 {
+    width: 71%;
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+._100 {
+    width: 96%;
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+label {
+    width: 100%;
+	color:white;
+	font-weight:bold;
+	font-size: 0.9em;
+	display:block;
+	margin-bottom:3px;
+	margin-top:10px;
+}
+
+input[type=text],input[type=password]{
+	margin: 0 0 1em 0;
+	border: 1px solid #B3B3B3;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	padding: 0.5em;
+    width: 100%;
+}
+textarea {
+    border: 1px solid #B3B3B3;
+    width: 100%;
+    -moz-border-radius: 3px;
+}
+select {
+    border: 1px solid #B3B3B3;
+    width: 100%;
+    -moz-border-radius: 3px;
+}
+
+div.radio_patch {
+	width:auto;
+	vertical-align:top;
+	color:auto;
+	display: inline-block;
+	padding-right:20px;
+	
+}
+
+div.radio_patch label{
+	width:auto;
+	text-align:center;
+}
+
+/* FOR FUN */
+
+h1 {
+	text-shadow: 0 1px 0 #686633;
+}
+
+

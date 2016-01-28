@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2012 Gianrico D'Angelis -  gianrico.dangelis@gmail.com
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:background="#000000" android:padding="30dip"
+    android:fillViewport="true">
+
+<TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:stretchColumns="*">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Version"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtVersion"
+            android:layout_width="match_parent" android:enabled="false"
+            android:layout_height="wrap_content" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+
+        <TextView
+            android:id="@+id/textView2" android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MAC Address"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText  android:imeOptions="flagNoExtractUi" 
+            android:id="@+id/txtMac" android:enabled="false" android:layout_weight="0.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Server Address" android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText  android:imeOptions="flagNoExtractUi" 
+            android:id="@+id/txtServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+    </TableRow>
+
+ <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password" android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText  android:imeOptions="flagNoExtractUi" 
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+    
+    </TableRow>
+    
+     <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    
+    <Button
+     android:id="@+id/btnConfSave" android:layout_marginTop="10dip"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+     android:text="Save" />
+    
+    <Button
+     android:id="@+id/btnConfClose" android:layout_marginTop="10dip"
+     android:layout_width="match_parent" 
+     android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+     android:text="Close" />  
+    
+	</TableRow>
+
+     
+ <View
+    android:id="@+id/view1"
+    android:layout_width="wrap_content"
+    android:layout_height="2px" android:background="#FFFFFF" />
+<LinearLayout
+    android:id="@+id/linearLayout1" android:layout_marginTop="20dip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	  
+    <RadioGroup
+        android:id="@+id/rgSync" android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sync Config Only" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sync Config &amp; Data" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sync Config, Data &amp; Images" />
+    </RadioGroup>
+
+</LinearLayout>
+<LinearLayout android:layout_width="wrap_content" android:layout_gravity="center_horizontal" 
+		    android:layout_height="wrap_content" android:gravity="center">
+<ProgressBar android:id="@+id/pBarSync"
+			android:layout_width="wrap_content" android:layout_gravity="center_horizontal" 
+		    android:layout_height="wrap_content" android:visibility="gone" />
+</LinearLayout>
+<Button
+    android:id="@+id/btnSync"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:visibility="visible" 
+    android:text="Sync" android:layout_gravity="center_horizontal" />
+
+</TableLayout>
+     
+</ScrollView>

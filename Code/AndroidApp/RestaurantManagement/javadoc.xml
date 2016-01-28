@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="false" classpath="libs/android-support-v4.jar;libs/jsonrpc2-base-1.24.jar;C:\Program Files (x86)\Android\android-sdk\tools\support\annotations.jar; C:\Program Files (x86)\Android\android-sdk\platforms\android-19\android.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="myrestaurant.main,myrestaurant.dbtables" source="1.6" sourcepath="gen;src" splitindex="true" use="true" version="true">
+            <link href="file:/C:/Program Files (x86)/Android/android-sdk/docs/reference"/>
+            <link href="file:/C:/Users/Amgad/workspace/Easymenu-NG/doc/"/>
+        </javadoc>
+    </target>
+</project>

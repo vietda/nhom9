@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2012 Gianrico D'Angelis -  gianrico.dangelis@gmail.com
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollViewLeft"
+        android:layout_width="match_parent" android:fillViewport="true"
+        android:layout_height="match_parent" android:layout_weight="1" >
+        
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:paddingTop="10dp" android:paddingLeft="5dp" 
+    android:paddingRight="5dp">
+
+    <TextView android:id="@+id/lblTable" android:layout_width="match_parent" android:layout_height="wrap_content" 
+        android:text=""  android:layout_marginTop="10dp" android:textSize="18sp" 
+        android:textColor="@color/lbl_table"
+         android:layout_gravity="center" android:gravity="center" android:textStyle="bold"
+     	android:clickable="true"
+     />
+    
+    <Button android:id="@+id/btnMenu" android:layout_width="match_parent" android:layout_height="wrap_content" 
+        android:text="@string/menus" android:onClick="leftMenuClicked" android:layout_marginTop="10dp" 
+        android:enabled="false" style="@style/button_df">
+        
+    </Button>
+     <Button android:id="@+id/btnDrinks" android:layout_width="match_parent" android:layout_height="wrap_content" 
+         android:text="@string/drinks" android:onClick="leftMenuClicked" android:layout_marginTop="10dp"
+         android:enabled="false" style="@style/button_df">
+        
+    </Button>
+    <View android:layout_width="match_parent" android:layout_height="3px" 
+        android:background="@color/menu_separator"  android:layout_marginTop="10dp"/>
+    
+    <Button android:id="@+id/btnWaiter" android:layout_width="match_parent" android:layout_height="wrap_content" 
+         android:text="@string/call" android:onClick="leftMenuClicked" android:layout_marginTop="10dp"
+         android:enabled="false" style="@style/button_df">
+    </Button>
+    
+     <Button android:id="@+id/btnOrder" android:layout_width="match_parent" android:layout_height="wrap_content" 
+         android:text="@string/review" android:onClick="leftMenuClicked" android:layout_marginTop="10dp"
+         android:enabled="false" style="@style/button_df"  >
+    </Button>
+     
+      <Button android:id="@+id/btnBill" android:layout_width="match_parent" android:layout_height="wrap_content" 
+         android:text="@string/paybill" android:onClick="leftMenuClicked" android:layout_marginTop="10dp"
+         android:enabled="false" style="@style/button_df" >
+        
+    </Button>
+    <Button android:id="@+id/btnConfig" android:layout_width="match_parent" android:layout_height="wrap_content" 
+         android:text="@string/settings" android:onClick="leftMenuClicked" android:layout_marginTop="10dp"
+         android:visibility="gone" style="@style/button_df" >
+        
+    </Button>
+    <!-- 
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"  
+        android:layout_margin="5dip" android:textColor="@color/powered_by" android:layout_weight="1"
+        android:text=" " android:layout_gravity="bottom|right" android:gravity="center|bottom"  />
+      -->
+
+</LinearLayout>
+</ScrollView>
